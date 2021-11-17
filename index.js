@@ -60,6 +60,9 @@ run().catch(console.dir);
 app.get('/', (req, res) => {
     res.send('Running Greeting Server....');
 });
+app.get('/', (req, res) => {
+    res.send('Hello updated here')
+})
 
 app.listen(port, () => {
     console.log(`Running Server http://localhost:${port}`);
